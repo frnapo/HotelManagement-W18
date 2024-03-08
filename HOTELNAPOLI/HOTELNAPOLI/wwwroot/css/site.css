@@ -1,0 +1,57 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
+html {
+    font-size: 14px;
+    font-family: 'Quattrocento', serif;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Quattrocento', serif;
+    background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/331895439.jpg?k=d3d32d6fa05e32ecfa85371b34d7d4f1642a6a298357725a8935d7c092f4be89&o=&hp=1');
+background-size: cover;
+}
+
+h1, p {
+    background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+.nav-link:hover {
+    background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(1px 1px 2px black);
+    transform: scale(1.13)
+}
+
+video {
+    filter: blur(4px)
+}
+
+
+
+td {
+    filter: drop-shadow(1px 1px 1px black);
+}

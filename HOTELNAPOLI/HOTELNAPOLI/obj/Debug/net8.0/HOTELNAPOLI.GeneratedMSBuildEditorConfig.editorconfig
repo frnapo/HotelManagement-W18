@@ -1,0 +1,139 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HOTELNAPOLI
+build_property.RootNamespace = HOTELNAPOLI
+build_property.ProjectDir = C:\Users\Francesco\Desktop\CORSO_EPICODE\settimana_18\settimana18Giorno5\HOTELNAPOLI\HOTELNAPOLI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Francesco\Desktop\CORSO_EPICODE\settimana_18\settimana18Giorno5\HOTELNAPOLI\HOTELNAPOLI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Cameres/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtZXJlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Cameres/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtZXJlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Cameres/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtZXJlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Cameres/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtZXJlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Clientis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50aXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Clientis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50aXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Clientis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50aXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Clientis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50aXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Logins/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5zXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Pensionis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuc2lvbmlzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Pensionis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuc2lvbmlzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Pensionis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuc2lvbmlzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Pensionis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuc2lvbmlzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Prenotazionis/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbm90YXppb25pc1xDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Prenotazionis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbm90YXppb25pc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Prenotazionis/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbm90YXppb25pc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Prenotazionis/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbm90YXppb25pc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Prenotazionis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbm90YXppb25pc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Prenotazionis/SearchByCodiceFiscale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbm90YXppb25pc1xTZWFyY2hCeUNvZGljZUZpc2NhbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Prenotazionis/TotalPensioneCompleta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlbm90YXppb25pc1xUb3RhbFBlbnNpb25lQ29tcGxldGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Servizis/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vydml6aXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Servizis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2Vydml6aXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Francesco/Desktop/CORSO_EPICODE/settimana_18/settimana18Giorno5/HOTELNAPOLI/HOTELNAPOLI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3l1l5z0t18

@@ -1,0 +1,68 @@
+﻿@model HOTELNAPOLI.Models.Prenotazioni
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="mb-3">MODIFICA PRENOTAZIONE</h1>
+
+<div class="row bg-black bg-opacity-75 text-white p-5">
+    <div class="col-8 offset-2">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="DataPrenotazione" class="control-label"></label>
+                <input asp-for="DataPrenotazione" class="form-control" />
+                <span asp-validation-for="DataPrenotazione" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataInizioSoggiorno" class="control-label"></label>
+                <input asp-for="DataInizioSoggiorno" class="form-control" />
+                <span asp-validation-for="DataInizioSoggiorno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataFineSoggiorno" class="control-label"></label>
+                <input asp-for="DataFineSoggiorno" class="form-control" />
+                <span asp-validation-for="DataFineSoggiorno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Anno" class="control-label"></label>
+                <input asp-for="Anno" class="form-control" />
+                <span asp-validation-for="Anno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Acconto" class="control-label"></label>
+                <input asp-for="Acconto" class="form-control" />
+                <span asp-validation-for="Acconto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prezzo" class="control-label"></label>
+                <input asp-for="Prezzo" class="form-control" />
+                <span asp-validation-for="Prezzo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IDCliente" class="control-label"></label>
+                <select asp-for="IDCliente" class="form-control" asp-items="ViewBag.IDCliente"></select>
+                <span asp-validation-for="IDCliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IDCamera" class="control-label"></label>
+                <select asp-for="IDCamera" class="form-control" asp-items="ViewBag.IDCamera"></select>
+                <span asp-validation-for="IDCamera" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IDPensione" class="control-label"></label>
+                <select asp-for="IDPensione" class="form-control" asp-items="ViewBag.IDPensione"></select>
+                <span asp-validation-for="IDPensione" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3 text-center">
+                <a asp-action="Index" class="btn btn-outline-light fs-4 rounded-0"><i class="bi bi-arrow-bar-left"></i></a><input type="submit" value="MODIFICA" class="btn btn-outline-light fs-4 rounded-0" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

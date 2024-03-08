@@ -1,0 +1,47 @@
+﻿@model IEnumerable<HOTELNAPOLI.Models.Servizi>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="mb-3">GESTIONE SERVIZI</h1>
+
+
+    <a asp-action="Create" class="m-3 btn btn-dark bg-gradient rounded-0"><p>NUOVO SERVIZIO</p></a>
+
+<table class="table bg-gradient fw-bold shadow text-center">
+    <thead class="text-black">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Descrizione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prezzo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataRichiestaServizio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prenotazione)
+            </th>
+        </tr>
+    </thead>
+    <tbody class="text-white">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descrizione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prezzo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataRichiestaServizio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenotazione.ID)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

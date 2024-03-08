@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HOTELNAPOLI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HOTELNAPOLI.styles.css" asp-append-version="true" />
+</head>
+<body>
+        <video autoplay muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -100;">
+            <source src="./assets/video.mp4" type="video/mp4">
+        </video>
+    <header>
+
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-black shadow mb-3">
+            <div class="container-fluid">
+                    <a class="navbar-brand text-white ms-2" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vip-hotel-logo-design-template-eb72f8981df652fe0be27a9a517ae471_screen.jpg?ts=1660122446" width="50"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                           <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                    </ul>
+
+                        <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Clientis" asp-action="Index">Clienti</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Prenotazionis" asp-action="Index">Prenotazioni</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Servizis" asp-action="Index">Servizi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Logins" asp-action="Logout">Logout</a>
+                            </li>
+                        } else {
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Logins" asp-action="Login">Login</a>
+                            </li>
+                        }
+                        </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid" style="padding-bottom: 70px;">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="shadow footer text-black bg-black">
+        <div class="container text-white text-center">
+            &copy; 2024 - HOTELNAPOLI - Privacy
+            <h6>Tutti i diritti di HOTELNAPOLI riservati a Francesco Napoli</h6>
+            <h6 class="my-4">Hotel Napoli in Via Napoli a Napoli</h6>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

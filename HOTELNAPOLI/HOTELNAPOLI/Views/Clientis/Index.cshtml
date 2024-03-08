@@ -1,0 +1,75 @@
+﻿@model IEnumerable<HOTELNAPOLI.Models.Clienti>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>GESTIONE CLIENTI</h1>
+
+
+    <a asp-action="Create" class="m-3 btn btn-dark bg-gradient rounded-0 table-striped"><p>NUOVO CLIENTE</p></a>
+<table class="table bg-gradient fw-bold shadow text-center">
+    <thead class="text-black">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cognome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodiceFiscale)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Citta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Provincia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cellulare)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="text-white">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cognome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodiceFiscale)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Citta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Provincia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cellulare)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-dark bg-gradient rounded-0"><i class="bi bi-pen"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger bg-gradient rounded-0"><i class="bi bi-x-lg"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

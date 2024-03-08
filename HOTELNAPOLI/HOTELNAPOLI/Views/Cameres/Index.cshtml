@@ -1,0 +1,52 @@
+﻿@model IEnumerable<HOTELNAPOLI.Models.Camere>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+    <a asp-action="Create" class="m-3 btn btn-dark bg-gradient rounded-0"><p>AGGIUNGI CAMERA</p></a>
+
+<table class="table bg-white bg-opacity-75">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Numero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descrizione)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doppia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disponibilita)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descrizione)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doppia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disponibilita)
+            </td>
+            <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="m-3 btn btn-dark bg-gradient rounded-0">Modifica</a>
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

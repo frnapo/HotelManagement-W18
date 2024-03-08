@@ -1,0 +1,16 @@
+﻿        @model HOTELNAPOLI.Models.CheckoutViewModel
+
+        <h1>Dettaglio della prenotazione</h1>
+
+        <p>Numero di stanza: @Model.Prenotazione.Camera.ID @Model.Prenotazione.Camera.Descrizione</p>
+        <p>Periodo: @Model.Prenotazione.DataInizioSoggiorno - @Model.Prenotazione.DataFineSoggiorno</p>
+
+        <h2>Servizi aggiuntivi</h2>
+        <ul>
+        @foreach (var servizio in Model.Servizi)
+        {
+        <li> @servizio.Descrizione: @servizio.Prezzo €</li>
+        }
+        </ul>
+        <p>Tariffa applicata: @Model.Prenotazione.Prezzo</p>
+        <p>Importo da saldare: @(Model.Prenotazione.Prezzo - Model.Prenotazione.Acconto + Model.Servizi.Sum(s => s.Prezzo))</p>

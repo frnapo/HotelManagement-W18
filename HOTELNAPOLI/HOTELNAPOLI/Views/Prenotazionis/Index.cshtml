@@ -1,0 +1,107 @@
+﻿@model IEnumerable<HOTELNAPOLI.Models.Prenotazioni>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center">GESTIONE PRENOTAZIONI</h1>
+
+
+ <form asp-controller="Prenotazionis" asp-action="SearchByCodiceFiscale" method="get" class="mt-2 d-flex justify-content-between">
+     <div class="input-group w-50 mx-auto">
+         <input type="text" class="form-control rounded-0" id="codiceFiscale" name="codiceFiscale" placeholder="Cerca per codice fiscale">
+         <div class="input-group-append">
+            <button type="submit" class="btn btn-dark bg-gradient rounded-0">Cerca</button>
+         </div>
+     </div>
+ </form>
+
+<form asp-controller="Prenotazionis" asp-action="TotalPensioneCompleta" method="get" class="">
+    <div class="input-group mx-auto">
+    <input type="submit" value="Mostra totali per pensione completa" class="mx-auto m-3 btn btn-dark bg-gradient rounded-0" />
+</div>
+</form>
+
+<div class="input-group mx-auto">
+    <a asp-action="Create" class="mx-auto btn btn-dark bg-gradient rounded-0"><p>NUOVA PRENOTAZIONE</p></a>
+</div>
+
+<div class="text-center m-2">
+<span class="text-danger text-center m-2">@TempData["Message1"]</span>
+<span class="text-danger text-center m-2">@TempData["Message2"]</span>
+<span class="text-danger text-center m-2">@TempData["Message3"]</span>
+</div>
+
+<table class="table bg-gradient fw-bold shadow text-center">
+    <thead class="text-black">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DataPrenotazione)
+            </th>
+            <th>
+                Inizio soggiorno
+            </th>
+            <th>
+                Fine soggiorno  
+            </th>
+@*             <th>
+                @Html.DisplayNameFor(model => model.Anno)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.Acconto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prezzo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Camera)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pensione)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="text-white">
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    @item.DataPrenotazione.ToString("dd/MM/yyyy")
+            </td>
+            <td>
+                    @item.DataInizioSoggiorno.ToString("dd/MM/yyyy")
+            </td>
+            <td>
+                    @item.DataFineSoggiorno.ToString("dd/MM/yyyy")
+            </td>
+@*             <td>
+                @Html.DisplayFor(modelItem => item.Anno)
+            </td> *@
+            <td>
+                @Html.DisplayFor(modelItem => item.Acconto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prezzo)
+            </td>
+            <td>
+                @item.Cliente?.Cognome
+            </td>
+            <td>
+                @item.Camera?.ID @item.Camera?.Descrizione
+            </td>
+            <td>
+                @item.Pensione?.Tipologia
+            </td>
+            <td class="d-flex border-0">
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-dark bg-gradient rounded-0"><i class="bi bi-pen"></i></a>
+                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger bg-gradient rounded-0"><i class="bi bi-x-lg"></i></a>
+                    <div class="input-group mx-auto">
+                        <a asp-action="Checkout" asp-route-id="@item.ID" class="mx-auto btn btn-dark bg-gradient rounded-0"><p>CHECKOUT</p></a>
+                    </div>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

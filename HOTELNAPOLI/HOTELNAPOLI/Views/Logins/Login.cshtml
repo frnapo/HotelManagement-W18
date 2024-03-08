@@ -4,12 +4,10 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>Login</h1>
+<h1 class="text-center">LOGIN</h1>
 
-<h4>Login</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="row bg-black bg-opacity-75 text-white p-5">
+    <div class="col-8 offset-2">
         <form asp-action="Login">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -23,16 +21,13 @@
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <span class="text-danger text-center fs-5">@TempData["Error"]</span>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group mt-3 text-center">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-light fs-4 rounded-0"><i class="bi bi-arrow-bar-left"></i></a><input type="submit" value="LOGIN" class="btn btn-outline-light fs-4 rounded-0" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

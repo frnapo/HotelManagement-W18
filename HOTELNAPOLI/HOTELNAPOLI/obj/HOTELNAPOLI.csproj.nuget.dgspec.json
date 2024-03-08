@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\HOTELNAPOLI\\HOTELNAPOLI\\HOTELNAPOLI.csproj": {}
+    "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\GestionaleHotel\\HOTELNAPOLI\\HOTELNAPOLI\\HOTELNAPOLI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\HOTELNAPOLI\\HOTELNAPOLI\\HOTELNAPOLI.csproj": {
+    "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\GestionaleHotel\\HOTELNAPOLI\\HOTELNAPOLI\\HOTELNAPOLI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\HOTELNAPOLI\\HOTELNAPOLI\\HOTELNAPOLI.csproj",
+        "projectUniqueName": "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\GestionaleHotel\\HOTELNAPOLI\\HOTELNAPOLI\\HOTELNAPOLI.csproj",
         "projectName": "HOTELNAPOLI",
-        "projectPath": "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\HOTELNAPOLI\\HOTELNAPOLI\\HOTELNAPOLI.csproj",
+        "projectPath": "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\GestionaleHotel\\HOTELNAPOLI\\HOTELNAPOLI\\HOTELNAPOLI.csproj",
         "packagesPath": "C:\\Users\\Francesco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\HOTELNAPOLI\\HOTELNAPOLI\\obj\\",
+        "outputPath": "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\GestionaleHotel\\HOTELNAPOLI\\HOTELNAPOLI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Francesco\\AppData\\Roaming\\NuGet\\NuGet.Config",

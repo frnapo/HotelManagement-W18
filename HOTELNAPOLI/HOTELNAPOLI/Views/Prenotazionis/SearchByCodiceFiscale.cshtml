@@ -4,13 +4,10 @@
     ViewData["Title"] = "SearchByCodiceFiscale";
 }
 
-<h1>SearchByCodiceFiscale</h1>
+<h1>RISULTATI DA CODICE FISCALE</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+<table class="table bg-gradient fw-bold shadow text-center">
+    <thead class="text-black">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.DataPrenotazione)
@@ -20,9 +17,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.DataFineSoggiorno)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Anno)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Acconto)
@@ -42,7 +36,7 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="text-white">
 @foreach (var item in Model) {
         <tr>
             <td>
@@ -55,16 +49,13 @@
                 @Html.DisplayFor(modelItem => item.DataFineSoggiorno)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Anno)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Acconto)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Prezzo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Cliente.Cellulare)
+                    @item.Cliente?.Cognome @item.Cliente?.Nome
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Camera.ID)
@@ -72,12 +63,12 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Pensione.Tipologia)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
         </tr>
 }
     </tbody>
+
+
 </table>
+<div class="form-group mt-3 text-center">
+    <a asp-action="Index" class="btn btn-dark fs-4 rounded-0">INDIETRO</a>
+</div>

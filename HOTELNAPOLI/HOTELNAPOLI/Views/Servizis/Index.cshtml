@@ -4,10 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h1 class="mb-3">GESTIONE SERVIZI</h1>
+<h1>GESTIONE SERVIZI</h1>
 
 
-    <a asp-action="Create" class="m-3 btn btn-dark bg-gradient rounded-0"><p>NUOVO SERVIZIO</p></a>
+    <a asp-action="Create" class="m-3 mx-auto btn btn-dark bg-gradient rounded-0"><p>NUOVO SERVIZIO</p></a>
+
 
 <table class="table bg-gradient fw-bold shadow text-center">
     <thead class="text-black">
@@ -33,10 +34,10 @@
                 @Html.DisplayFor(modelItem => item.Descrizione)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Prezzo)
+                    @Html.DisplayFor(modelItem => item.Prezzo)€
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DataRichiestaServizio)
+                    @item.DataRichiestaServizio.ToString("dd/MM/yyyy")
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Prenotazione.ID)

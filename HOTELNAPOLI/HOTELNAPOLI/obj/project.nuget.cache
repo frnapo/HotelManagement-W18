@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0/t+8lufphGH6WPAvsEwrw+p8NLBvXQsyZgfRq6T4oFNyUZ6gRKxCONlJlojlmU4iAx8NMzShX4s0xAGQ16Gzg==",
+  "dgSpecHash": "bpJMrkEqsvja9+iSOwkX6/prZ0NvU1dDI+Jl3uoSt6M7n2t9hFNn5muhFHubpbHfTAztOijulRy+5smQ4ArmJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\HOTELNAPOLI\\HOTELNAPOLI\\HOTELNAPOLI.csproj",
+  "projectFilePath": "C:\\Users\\Francesco\\Desktop\\CORSO_EPICODE\\settimana_18\\settimana18Giorno5\\GestionaleHotel\\HOTELNAPOLI\\HOTELNAPOLI\\HOTELNAPOLI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Francesco\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Francesco\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

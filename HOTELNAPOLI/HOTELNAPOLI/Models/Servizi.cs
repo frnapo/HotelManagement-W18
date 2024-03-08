@@ -8,7 +8,7 @@ namespace HOTELNAPOLI.Models
         public int ID { get; set; }
         [Required(ErrorMessage = "Il campo è obbligatorio")]
         [Display(Name = "Descrizione")]
-        public string Descrizione { get; set; }
+        public DescrizioneServizi Descrizione { get; set; }
         [Display(Name = "Prezzo")]
         public double? Prezzo { get; set; }
 

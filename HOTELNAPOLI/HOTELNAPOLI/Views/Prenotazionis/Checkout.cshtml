@@ -1,16 +1,43 @@
 ﻿        @model HOTELNAPOLI.Models.CheckoutViewModel
 
-        <h1>Dettaglio della prenotazione</h1>
+   <h1>CHECKOUT PRENOTAZIONE N. @Model.Prenotazione.ID</h1>
 
-        <p>Numero di stanza: @Model.Prenotazione.Camera.ID @Model.Prenotazione.Camera.Descrizione</p>
-        <p>Periodo: @Model.Prenotazione.DataInizioSoggiorno - @Model.Prenotazione.DataFineSoggiorno</p>
 
-        <h2>Servizi aggiuntivi</h2>
-        <ul>
+<div class="row bg-black bg-opacity-75 text-white p-5">
+    <div class="col-12">
+
+        <p>Numero di stanza:</p>
+        <h5>@Model.Prenotazione.Camera.ID @Model.Prenotazione.Camera.Descrizione</h5>
+        <p>Periodo:</p>
+        <h5> @Model.Prenotazione.DataInizioSoggiorno - @Model.Prenotazione.DataFineSoggiorno</h5>
+
+        <p>Servizi aggiuntivi:</p>
+        <ul class="list-unstyled fs-5">
         @foreach (var servizio in Model.Servizi)
         {
-        <li> @servizio.Descrizione: @servizio.Prezzo €</li>
+        <li> @servizio.Descrizione: @servizio.Prezzo€</li>
         }
         </ul>
-        <p>Tariffa applicata: @Model.Prenotazione.Prezzo</p>
-        <p>Importo da saldare: @(Model.Prenotazione.Prezzo - Model.Prenotazione.Acconto + Model.Servizi.Sum(s => s.Prezzo))</p>
+        <p>Tariffa applicata:</p>
+        <h5> @Model.Prenotazione.Prezzo€</h5>
+        <p>Acconto versato:</p>
+        <h5>@Model.Prenotazione.Acconto€</h5>
+    </div>
+
+
+        <div class="col-12 text-end">
+            <p class="fs-4">TARIFFA:</p> 
+            <h5 class="text-success">+@Model.Prenotazione.Prezzo€</h5>
+            <p class="fs-4">-ACCONTO:</p>
+            <h5 class="text-danger">
+                -@Model.Prenotazione.Acconto€
+            </h5>
+            <p class="fs-4">+TOTALE SERVIZI:</p>
+            <h5 class="text-success">+@Model.Servizi.Sum(s => s.Prezzo)€</h5>
+            <p class="fs-4">TOTALE:</p> 
+            <h3 class="text-success">@(Model.Prenotazione.Prezzo - Model.Prenotazione.Acconto + Model.Servizi.Sum(s => s.Prezzo))€</h3>
+        </div>
+    <div class="form-group mt-3 text-center">
+        <a asp-action="Index" class="btn btn-outline-light fs-4 rounded-0"><i class="bi bi-arrow-bar-left">INDIETRO</i></a>
+    </div>
+</div>

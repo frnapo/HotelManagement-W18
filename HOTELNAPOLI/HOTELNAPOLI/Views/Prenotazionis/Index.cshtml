@@ -42,10 +42,6 @@
             </th>
             <th>
                 Fine soggiorno  
-            </th>
-@*             <th>
-                @Html.DisplayNameFor(model => model.Anno)
-            </th> *@
             <th>
                 @Html.DisplayNameFor(model => model.Acconto)
             </th>
@@ -76,17 +72,14 @@
             <td>
                     @item.DataFineSoggiorno.ToString("dd/MM/yyyy")
             </td>
-@*             <td>
-                @Html.DisplayFor(modelItem => item.Anno)
-            </td> *@
             <td>
-                @Html.DisplayFor(modelItem => item.Acconto)
+                    @item.Acconto€
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Prezzo)
+                    @item.Prezzo€
             </td>
             <td>
-                @item.Cliente?.Cognome
+                @item.Cliente?.Cognome @item.Cliente?.Nome
             </td>
             <td>
                 @item.Camera?.ID @item.Camera?.Descrizione

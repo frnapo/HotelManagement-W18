@@ -7,7 +7,7 @@
 <h1>GESTIONE CLIENTI</h1>
 
 
-    <a asp-action="Create" class="m-3 btn btn-dark bg-gradient rounded-0 table-striped"><p>NUOVO CLIENTE</p></a>
+<a asp-action="Create" class="m-3 mx-auto btn btn-dark bg-gradient rounded-0"><p>NUOVO CLIENTE</p></a>
 <table class="table bg-gradient fw-bold shadow text-center">
     <thead class="text-black">
         <tr>
@@ -66,8 +66,8 @@
                 @Html.DisplayFor(modelItem => item.Cellulare)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-dark bg-gradient rounded-0"><i class="bi bi-pen"></i></a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger bg-gradient rounded-0"><i class="bi bi-x-lg"></i></a>
+               <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-dark bg-gradient rounded-0"><i class="bi bi-pen"></i></a>
+               <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger bg-gradient rounded-0"><i class="bi bi-x-lg"></i></a>
             </td>
         </tr>
 }
